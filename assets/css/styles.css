@@ -1856,3 +1856,21 @@ justify-self: center;
 .tool_panel{
   background-color: var(--accordion-background) !important;
 }
+
+
+@media screen and (min-width:340px) and (max-width:767px){
+  .tool_panel{
+    /* background-color: var(--card-background) !important; */
+  }
+  .tool_content .tool_content_details{
+    width: 95% !important;
+  }
+  .tool_content .tool_content_details .about__description{
+    font-size: 1rem !important;
+  }
+  .tool_content .tool_content_img{
+    width:50% !important;
+    padding: 1rem;
+    margin: auto;
+  }
+}
