@@ -151,50 +151,80 @@
 </head>
 
 <body>
-    <div class="aboveHeader" style="
+    <header class="headertop" style="position: sticky !important; border-radius:0px; padding:4px 10px; color:white; background-color: black;">
+
+
+        <div class="container" style="display: flex; align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;">
+
+<div>
+    <a href="mailto:info@UCTPL.com" class="footer__link" style="color:white; "><i class="ri-mail-send-line"></i>
+        info@UCTPL.com</a>
+</div>
+
+<div style="text-align: center;">
+
+    An IATF 16949:2016 and 9001:2015 Certified Company
+
+</div>
+
+        </div>
+    </header>
+
+
+    <section>
+
+        <div class="aboveHeader container grid" style="
 display: flex;
 flex-direction: row;
 align-items: center;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: space-around;
 ">
 
-    <div class="logoo__container">
-        
-        <img src="../assets/img/unicom_log.jpg" style="width:180px; height:60px; padding: 5px;
-        background-color: white;
-        border-radius: 5px !important;">
-        <!-- <a href="#" class="nav__logo"> </a>     -->
-        
-    </div>
+            <div class="logoo__container">
 
-    <div class="cert__container" style="padding:15px">
+                <img src="./../assets/img/unicom_log.jpg" style="width:180px; height:60px; padding: 5px;
+                background-color: white;
+                border-radius: 5px !important;">
+                <!-- <a href="#" class="nav__logo"> </a>     -->
 
-        <h2 style="text-align: center;">
-            UNITED COMPONENTS AND TOOLS PRIVATE LIMITED
-        </h2>
-        
-        <p style="text-align: center;">
-            An IATF 16949:2016 and 9001:2015 Certified Company             
-        </p>
-        
-    </div>
+            </div>
 
+            <div class="cert__container" style="padding:15px">
 
-</div>
-    
+                <h2 style="text-align: center;">
+                    UNITED COMPONENTS AND TOOLS PRIVATE LIMITED
+                </h2>
+
+                <!-- <p style="text-align: center; font-weight: 800;">
+                    An IATF 16949:2016 and 9001:2015 Certified Company
+                </p> -->
+
+            </div>
 
 
+        </div>
 
-<header class="header" id="header" style="position: sticky !important; border-radius:0px;">
+    </section>
 
 
-    <nav class="nav container">
-  
-        <!-- <div class="logo__container">
-  placeholder
-        </div> -->
-        <br />
+
+
+
+    <header class="header navheader" id="header" style="position: sticky !important; top:28px; border-radius:0px;">
+
+
+        <nav class="nav container">
+
+            <!-- <div class="logo__container">
+placeholder
+            </div> -->
+            <br />
+
   
   
         <div class="nav__menu" id="nav-menu">
@@ -206,7 +236,9 @@ justify-content: center;
                     <a href="./../About/index.html" class="nav__link">ABOUT</a>
                 </li>
                 <li class="nav__item">
-                    <div class="dropdown">
+                    <a href="./../Products/ALL/" class="nav__link">PRODUCTS</a>
+
+                    <!-- <div class="dropdown">
                         <div class=" dropbtn">PRODUCTS
                             <i class="ri-arrow-drop-down-line"></i>
                         </div>
@@ -217,11 +249,11 @@ justify-content: center;
   
   
                         </div>
-                    </div>
+                    </div> -->
                 </li>
                 <li class="nav__item">
                     <div class="dropdown">
-                        <div class=" dropbtn">INFRASTRUCTURE
+                        <div class=" dropbtn">FACILITY
                             <i class="ri-arrow-drop-down-line"></i>
                         </div>
                         <div class="dropdown-content">
@@ -1005,22 +1037,22 @@ justify-content: center;
                         <h3 class="footer__subtitle">Products</h3>
                         <ul>
                                 <li class="footer__item">
-                                    <a href="./../Products/Electrical/index.html" class="footer__link"><i
+                                    <a href="./../Products/All/" class="footer__link"><i
                                             class="ri-tools-fill"></i> Electrical</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a href="./../Products/Automotive/index.html" class="footer__link"><i class="ri-tools-fill"></i>
+                                    <a href="./../Products/All/" class="footer__link"><i class="ri-tools-fill"></i>
                                         Automotive</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a href="./../Products/Home Appliances/index.html" class="footer__link"><i class="ri-tools-fill"></i>
+                                    <a href="./../Products/All/" class="footer__link"><i class="ri-tools-fill"></i>
                                         Home Appliances</a>
                                 </li>
                         </ul>
                     </div>
 
                     <div class="footer__data">
-                        <h3 class="footer__subtitle">Infrastructure</h3>
+                        <h3 class="footer__subtitle">FACILITY</h3>
                         <ul>
                             <li class="footer__item">
                                 <a href="./../Infrastruture/Research_and_development/index.html" class="footer__link"><i
