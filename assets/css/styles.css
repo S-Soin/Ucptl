@@ -2,10 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
+  --footer-background:#BFD0E0;
+  --footer-terms-link: #196186;
+
+  --header-background-color: #196186;
   --header-height: 3rem;
   --header-color: #ffffff;
-  --header-text-color: #5FA5C8;
-  --swiper-navigation-color: var(--header-text-color);
+  --header-text-color: #ffffff;
+  --header-text-color-hover: #5FA5C8;
+  --swiper-navigation-color: #ffffff;
+
+  --box-shadow-color: rgb(26 102 124 / 40%) -2px 0px 20px 0px;
+  --box-shadow-color-hover:  rgb(26, 102, 124) 0px 0px 20px 0px;
+
+  --header-box-shadow: 0px 20px 20px 2px #e7f5ff73 !important;
+
+  --subscribe-container-color: #196186;
+
 
   /*========== Colors ==========*/
   /* Change favorite color to match images */
@@ -13,9 +26,9 @@
   --hue-color: 190;
 
   /* HSL color mode */
-  --first-color: 		#007dc2;
+  --first-color: 		hsl(225, 39%, 35%);
   --first-color-second: 	hsl(200, 55%, 50%);
-  --first-color-alt: 	hsl(225, 39%, 35%);
+  --first-color-alt: 	#007dc2; 
   --title-color: hsl(225, 39%, 18%);
   --text-color: 	hsl(200, 69%, 31%);
   --text-color-light: hsl(200, 49%, 58%);
@@ -25,7 +38,7 @@
   --scroll-bar-color: hsl(190, 12%, 90%);
   --scroll-thumb-color: hsl(190, 12%, 75%);
   --card-background:hsl(199, 100%, 95%);
---accordion-background:#ffffff;
+
   /*========== Font and typography ==========*/
   --body-font: "Arial", sans-serif;;
   --title-font: "Arial", sans-serif;
@@ -61,6 +74,12 @@
   --img-scale: scale(1.1);
 }
 
+
+.ribbontop{
+
+background-color: black;
+
+}
 
 
 /* ========== Media Query ========*/
@@ -164,20 +183,34 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
 
+  --footer-background:#000000;
+
+  --header-background-color: #0e2a38;
   --header-color: hsl(225, 39%, 21%);
   --header-text-color: #e5ecef;
   --swiper-navigation-color: var(--header-text-color);
+
+
+  --box-shadow-color: rgba(255, 255, 255, 0.4) -2px 0px 20px 0px;
+  --box-shadow-color-hover:  rgb(255, 255, 255) 0px 0px 20px 0px;
+
+  --subscribe-container-color: #0e2a38;
+
+  --header-box-shadow: 0px 20px 20px 2px #08090973 !important;
+
+  --first-color: 		#007dc2;
+  --first-color-alt: 	hsl(203, 42%, 55%);
 
 
   --first-color-second: hsl(225, 37%, 31%);
     --title-color: hsl(190, 24%, 95%);
     --text-color: hsl(190, 8%, 75%);
     --input-color: hsl(190, 29%, 16%);
-    --body-color: hsl(225, 39%, 21%);
+    --body-color: #215a76;
     --scroll-bar-color: hsl(190, 12%, 48%);
     --scroll-thumb-color: hsl(190, 12%, 36%);
     --card-background: hsl(225, 50%, 25%);
-    --accordion-background:hsl(225deg 39.76% 27.61%);
+
 }
 
 /*========== Button Dark/Light ==========*/
@@ -191,10 +224,12 @@ body.dark-theme {
 }
 
 .scroll-header .nav__dark > span {
+  background-color: var(--header-background-color);
   color: var(--header-text-color);
 }
 
 .scroll-header .nav__dark > i {
+  background-color: var(--header-background-color);
   color: var(--header-text-color);
 }
 
@@ -313,7 +348,16 @@ p{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--header-background-color);
+}
+
+.headertop {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--header-background-color);
 }
 
 /*=============== NAV ===============*/
@@ -361,7 +405,7 @@ p{
   }
 
   .scroll-header .nav__menu {
-    background-color: var(--header-color);
+    background-color: var(--header-background-color);
   }
 
 }
@@ -379,6 +423,7 @@ p{
 }
 
 .scroll-header .nav__link{
+
   color: var(--header-text-color);
 }
 
@@ -403,12 +448,14 @@ p{
 /* Change background header */
 .scroll-header {
   color: var(--header-text-color);
-  background-color: var(--header-color); 
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  background-color: var(--header-background-color);
+  box-shadow: var(--header-box-shadow);
+
 }
 
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle {
+  background-color: var(--header-background-color);
   color: var(--header-text-color);
 }
 
@@ -560,7 +607,6 @@ p{
 
 .about__description {
   margin-bottom: var(--mb-2);
-  font-size: var(--normal-font-size);
 }
 
 .about__img {
@@ -843,6 +889,10 @@ p{
 }
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--footer-background);
+}
+
 .footer__container {
   row-gap: 5rem;
 }
@@ -899,7 +949,7 @@ p{
 .footer__copy,
 .footer__terms-link {
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: var(--text-color);
 }
 
 .footer__terms {
@@ -978,17 +1028,6 @@ p{
   .video__container {
     padding: 0;
   }
-  .tool_panel{
-    background-color: var(--card-background) !important;
-  }
-  .tool_content .tool_content_details{
-    width: 95% !important;
-  }
-  .tool_content .tool_content_img{
-    width: 95% !important;
-    padding: 1rem;
-  }
- 
 }
 
 /* For medium devices */
@@ -1004,9 +1043,6 @@ p{
   .subscribe__form {
     width: 470px;
     margin: 0 auto;
-  }
-  .tool_content .tool_content_details{
-    width: 95%;
   }
 }
 
@@ -1043,7 +1079,7 @@ p{
     display: none;
   }
   .change-theme {
-    color: var(--text-color);
+    color: var(--header-text-color);
   }
   /* .active-link::before {
     background-color: var(--white-color);
@@ -1115,7 +1151,7 @@ p{
     padding: 0;
   }
   .subscribe__container {
-    background-color: var(--first-color-second);
+    background-color: var(--subscribe-container-color);
     padding: 3.5rem 0;
   }
   .subscribe__input {
@@ -1126,7 +1162,6 @@ p{
     justify-content: space-between;
   }
 }
-
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
@@ -1204,7 +1239,10 @@ p{
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1024px;
+    max-width: calc(100% - 150px);
+  }
+  .navheader{
+    display: flex;
   }
 }
 
@@ -1434,7 +1472,7 @@ justify-self: center;
   }
 
   .home__content1 {
-    padding: 6rem 0 2rem;
+    /* padding: 6rem 0 2rem; */
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
   }
@@ -1460,7 +1498,7 @@ justify-self: center;
   }
 
   .home__content1 {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     gap: 3rem;
   }
 
@@ -1507,7 +1545,7 @@ justify-self: center;
 @media screen and (min-width: 1200px) {
   .home__img1 {
     height: 420px;
-    width: 1080px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
   justify-self: center;
@@ -1602,7 +1640,7 @@ justify-self: center;
   border: 1px solid var(--border-color);
   overflow-y: hidden;
   transition: 0.3s;
-  box-shadow: rgb(26 102 124 / 40%) -2px 0px 20px 0px;
+  box-shadow: var(--box-shadow-color);
 
 }
 
@@ -1648,7 +1686,7 @@ justify-self: center;
 }
 
 .featured__card:hover {
-  box-shadow: rgb(26, 102, 124) 0px 0px 20px 0px;
+  box-shadow: var(--box-shadow-color-hover);
   padding: 2rem 2rem 3rem 2rem ;
 }
 
@@ -1729,6 +1767,8 @@ justify-self: center;
   /* font-size: 16px;  
   border: none;
   outline: none; */
+  background-color: var(--header-background-color);
+
   color: var(--header-text-color);
   font-weight: var(--font-semi-bold);
 }
@@ -1822,7 +1862,7 @@ justify-self: center;
 }
 
 .tool_list_accordion {
-  margin: 2rem 0.5rem;
+  margin: 2rem;
 }
 
 .tool_accordion:after {
@@ -1848,29 +1888,8 @@ justify-self: center;
 .tool_content .tool_content_details{
   width: 65%;
 }
-.tool_content .tool_content_img{
-  width: 35%;
-  padding: 1rem;
-}
-
-.tool_panel{
-  background-color: var(--accordion-background) !important;
-}
-
-
-@media screen and (min-width:340px) and (max-width:767px){
-  .tool_panel{
-    /* background-color: var(--card-background) !important; */
-  }
+@media screen and (max-width: 340px) {
   .tool_content .tool_content_details{
-    width: 95% !important;
-  }
-  .tool_content .tool_content_details .about__description{
-    font-size: 1rem !important;
-  }
-  .tool_content .tool_content_img{
-    width:70% !important;
-    padding: 1rem;
-    margin: auto;
+    width: 95%;
   }
 }
