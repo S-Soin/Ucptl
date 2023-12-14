@@ -154,9 +154,33 @@
 </head>
 
 <body>
-    <section>
+    <header class="headertop"
+    style="position: sticky !important; border-radius:0px; padding:4px 10px; color:white; background-color: black;">
 
-        <div class="aboveHeader container grid" style="
+    <div class="container" style="display: flex; align-content: center;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;">
+
+        <div>
+            <a href="mailto:info@UCTPL.com" class="footer__link"
+                style="color:white; "><i class="ri-mail-send-line"></i>
+                info@UCTPL.com</a>
+        </div>
+
+        <div style="text-align: center;">
+
+            An IATF 16949:2016 and 9001:2015 Certified Company
+
+        </div>
+
+    </div>
+</header>
+
+<section>
+
+    <div class="aboveHeader container grid" style="
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -164,114 +188,111 @@ flex-wrap: wrap;
 justify-content: space-around;
 ">
 
-            <div class="logoo__container">
+        <div class="logoo__container">
 
-                <img src="./../../assets/img/unicom_log.jpg"
-                    style="width:180px; height:60px; border-radius: 0px !important;">
-                <!-- <a href="#" class="nav__logo"> </a>     -->
-
-            </div>
-
-            <div class="cert__container" style="padding:15px">
-
-                <h2 style="text-align: center;">
-                    UNITED COMPONENTS AND TOOLS PRIVATE LIMITED
-                </h2>
-
-                <p style="text-align: center; font-weight: 800;">
-                    An IATF 16949:2016 and 9001:2015 Certified Company
-                </p>
-
-            </div>
-
+            <img src="../../assets/img/unicom_log.jpg" style="width:180px; height:60px; padding: 5px;
+            background-color: white;
+            border-radius: 5px !important;">
+            <!-- <a href="#" class="nav__logo"> </a>     -->
 
         </div>
 
-    </section>
+        <div class="cert__container" style="padding:15px">
+
+            <h2 style="text-align: center;">
+                UNITED COMPONENTS AND TOOLS PRIVATE LIMITED
+            </h2>
+
+            <!-- <p style="text-align: center; font-weight: 800;">
+                An IATF 16949:2016 and 9001:2015 Certified Company
+            </p> -->
+
+        </div>
 
 
+    </div>
+
+</section>
+
+<header class="header navheader" id="header" style="position: sticky !important; top:28px; border-radius:0px;">
 
 
+    <nav class="nav container">
 
-    <header class="header" id="header" style="position: sticky !important; border-radius:0px;">
-
-
-        <nav class="nav container">
-
-            <!-- <div class="logo__container">
+        <!-- <div class="logo__container">
 placeholder
+        </div> -->
+        <br />
+
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../../index.html" class="nav__link active-link">HOME</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../../About/index.html" class="nav__link">ABOUT</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../../Products/ALL/index.html" class="nav__link">PRODUCTS</a>
+
+                    <!-- <div class="dropdown">
+                        <div class=" dropbtn">PRODUCTS
+                            <i class="ri-arrow-drop-down-line"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a class="nav__link" href="./Products/Electrical/">Electrical</a>
+                            <a class="nav__link" href="./Products/Automotive/">Automotive</a>
+                            <a class="nav__link" href="./Products/Home Appliances/">Home Appliances</a>
+
+
+                        </div>
+                    </div> -->
+                </li>
+                <li class="nav__item">
+                    <div class="dropdown">
+                        <div class=" dropbtn">FACILITIES
+                            <i class="ri-arrow-drop-down-line"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a class="nav__link" href="../Research_and_development/">Research & Development</a>
+                            <a class="nav__link" href="../TechnicalUpgradation/">Technical Upgradation </a>
+                            <a class="nav__link" href="../Tool_room/">Tool Room</a>
+                            <a class="nav__link" href="../PressShop/">Press Shop</a>
+                            <a class="nav__link" href="../WeldingTapping/">Welding and Tapping</a>
+                            <a class="nav__link" href="../InspectionTesting/">Quality</a>
+                            <a class="nav__link" href="../RawMaterial/">Raw Material</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="../../Customer/index.html" class="nav__link">CUSTOMERS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../../Contact/index.html" class="nav__link">CONTACT</a>
+                </li>
+            </ul>
+
+            <div class="nav__dark">
+                <!-- Theme change button -->
+                <span class="change-theme-name">Dark mode</span>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+            <!-- 
+            <div style="width: 25px;">
+
             </div> -->
-            <br />
+
+            <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-function-line"></i>
+        </div>
 
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./../../index.html" class="nav__link active-link">HOME</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./../../About/index.html" class="nav__link">ABOUT</a>
-                    </li>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <div class=" dropbtn">PRODUCTS
-                                <i class="ri-arrow-drop-down-line"></i>
-                            </div>
-                            <div class="dropdown-content">
-                                <a class="nav__link" href="./../../Products/Electrical/index.html">Electrical</a>
-                                <a class="nav__link" href="./../../Products/Automotive/index.html">Automotive</a>
-                                <a class="nav__link" href="./../../Products/Home Appliances/index.html">Home
-                                    Appliances</a>
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <div class="dropbtn">INFRASTRUCTURE
-                                <i class="ri-arrow-drop-down-line"></i>
-                            </div>
-                            <div class="dropdown-content">
-                                <a class="nav__link" href="./../Research_and_development/index.html">Research &
-                                    Development</a>
-                                <a class="nav__link" href="./../TechnicalUpgradation/index.html">Technical Upgradation
-                                </a>
-                                <a class="nav__link" href="./../Tool_room/index.html">Tool Room</a>
-                                <a class="nav__link" href="#">Press Shop</a>
-                                <a class="nav__link" href="./../WeldingTapping/index.html">Welding and Tapping</a>
-                                <a class="nav__link" href="./../InspectionTesting/index.html">Inspection and Testing</a>
-                                <a class="nav__link" href="./../RawMaterial/index.html">Raw Material</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./../../Customer/index.html" class="nav__link">CUSTOMERS</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./../../Contact/index.html" class="nav__link">CONTACT</a>
-                    </li>
-                </ul>
-
-                <div class="nav__dark">
-                    <!-- Theme change button -->
-                    <span class="change-theme-name">Dark mode</span>
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div>
-                <!-- 
-                <div style="width: 25px;">
-
-                </div> -->
-
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-
-
-        </nav>
-    </header>
+    </nav>
+</header>
     <main class="main">
         <section class="subscribe section himg" style="padding-top: 12px; border-radius: 0px !important;">
             <div style="width: 100%; height:200px; padding:0%;   position: relative; text-align: center;">
@@ -367,7 +388,7 @@ placeholder
                     </div>
 
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Hydraulic Machine <span>250 Ton</span> </button>
+                        <button class="tool_accordion">Hydraulic Machine <span>(250 Ton)</span> </button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -385,7 +406,7 @@ placeholder
                     </div>
 
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine<span>250 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine<span>(250 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -403,7 +424,7 @@ placeholder
                     </div>
 
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine<span>160 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine<span>(160 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -420,7 +441,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Mechanical Machine <span>150 Ton</span></button>
+                        <button class="tool_accordion">Mechanical Machine <span>(150 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -437,7 +458,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine <span>125 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine <span>(125 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -455,7 +476,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine <span>100 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine <span>(100 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -474,7 +495,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine <span>80 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine <span>(80 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -493,7 +514,7 @@ placeholder
                     </div>
 
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine <span>75 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine <span>(75 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -511,7 +532,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine <span>63 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine <span>(63 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -529,7 +550,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Mechanical Machine <span>50 Ton</span></button>
+                        <button class="tool_accordion">Mechanical Machine <span>(50 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -547,7 +568,7 @@ placeholder
                     </div>
 
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Mechanical Machine <span>30 Ton</span></button>
+                        <button class="tool_accordion">Mechanical Machine <span>(30 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -564,7 +585,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Pneuamatic Machine <span>25 Ton</span></button>
+                        <button class="tool_accordion">Pneuamatic Machine <span>(25 Ton)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -581,7 +602,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Shearing Machine <span>6.0 mm</span></button>
+                        <button class="tool_accordion">Shearing Machine <span>(6.0 mm)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -597,7 +618,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Servo Feeder <span>3x300</span></button>
+                        <button class="tool_accordion">Servo Feeder <span>(3x300)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -614,7 +635,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">pneumatic feeder<span>3x300</span></button>
+                        <button class="tool_accordion">pneumatic feeder<span>(3x300)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -631,7 +652,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Straightner feeder<span>3x300</span></button>
+                        <button class="tool_accordion">Straightner feeder<span>(3x300)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -648,7 +669,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Tapping Machine<span>M6</span></button>
+                        <button class="tool_accordion">Tapping Machine<span>(M6)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -664,7 +685,7 @@ placeholder
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">Vibrator <span>500L</span></button>
+                        <button class="tool_accordion">Vibrator <span>(500L)</span></button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -1115,7 +1136,7 @@ placeholder
                         <li class="footer__item">
                             <a href="./../InspectionTesting/index.html" class="footer__link"><i
                                     class="ri-tools-fill"></i>
-                                Inspection and Testing</a>
+                                Quality</a>
                         </li>
                         <li class="footer__item">
                             <a href="./../RawMaterial/index.html" class="footer__link"><i class="ri-tools-fill"></i>
