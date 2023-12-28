@@ -125,6 +125,11 @@
             font-size: 30px;
             color: #fff;
         }
+        .weldin_row{
+            /* display: flex;
+             */
+             width: 100%;
+        }
 
         @media screen and (min-width:800px) {
             .custom-model-main:before {
@@ -135,11 +140,24 @@
                 margin-right: -0px;
                 height: 100%;
             }
+            .weldind_col{
+                width: 50%;
+            }
         }
+        @media  (max-width:320px) { .weldind_col{
+                width: 100%;
+            }}
+@media  (max-width:480px) { .weldind_col{
+                width: 100%;
+            }}
+
 
         @media screen and (max-width:799px) {
             .custom-model-inner {
                 margin-top: 45px;
+            }
+             .weldind_col{
+                width: 100%;
             }
         }
     </style>
@@ -355,49 +373,49 @@
             <div class="marquee">
                 <div class="marquee__group">
                     <img src="./../../assets/img/infra/welding/slide1.jpg" alt="1mg" class="featured__img"
-                        style="height: 150px" loading="lazy">
+                        style="height: 200px" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide2.jpg" alt="tata fiber" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide3.jpg" alt="venus" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide4.jpg" alt="sgs" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide5.jpg" alt="fever" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide6.JPG" alt="myTeam" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide7.JPG" alt="prakash" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide8.JPG" alt="Deam info" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide9.JPG" alt="Deam info" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                    
                     <img src="./../../assets/img/infra/welding/slide12.jpg" alt="Deam info" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                 </div>
 
                 <div aria-hidden="true" class="marquee__group">
                     <img src="./../../assets/img/infra/welding/slide1.jpg" alt="1mg" class="featured__img"
-                        style="height: 150px" loading="lazy">
+                        style="height: 200px" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide2.jpg" alt="tata fiber" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide3.jpg" alt="venus" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide4.jpg" alt="sgs" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide5.jpg" alt="fever" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide6.JPG" alt="myTeam" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide7.JPG" alt="prakash" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide8.JPG" alt="Deam info" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide9.JPG" alt="Deam info" class="featured__img"
-                        style="height: 170px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide12.jpg" alt="Deam info" class="featured__img"
-                        style="height: 150px;" loading="lazy">
+                        style="height: 200px;" loading="lazy">
                 </div>
             </div>
 
@@ -427,78 +445,87 @@
         <section>
             <div class="tool_room_machine_list">
                 <h1 class="about__description">Welding Room Machine List ...</h1>
-                <div class="tool_list">
-                    <div class="tool_list_accordion">
-                        <button class="tool_accordion"> Mig Welding <span>450Amp</span></button>
-                        <div class="tool_panel">
-                            <div class="tool_content">
-                                <div class="tool_content_details">
-                                    <p class="about__description">MIG welding uses a constant voltage power supply to
-                                        create an electric arc that fuses the base metal with a filler wire that is
-                                        continuously fed through the welding torch. At the same time, an inert shielding
-                                        gas is also fed through the gun, to protect the weld pool from atmospheric
-                                        contamination.</p>
+                <div class="weldin_row">
+                    <div class="weldind_col">
+                        <div class="tool_list">
+                            <div class="tool_list_accordion">
+                                <button class="tool_accordion" disabled> Mig Welding <span>450Amp</span></button>
+                                <div class="tool_panel">
+                                    <div class="tool_content">
+                                        <div class="tool_content_details">
+                                            <p class="about__description">MIG welding uses a constant voltage power supply to
+                                                create an electric arc that fuses the base metal with a filler wire that is
+                                                continuously fed through the welding torch. At the same time, an inert shielding
+                                                gas is also fed through the gun, to protect the weld pool from atmospheric
+                                                contamination.</p>
+                                        </div>
+                                        <div class="tool_content_img">
+                                            <img src="./../../assets/img/infra/welding/mig.jpg" loading="lazy"></img>
+                                        </div>
+                                    </div>
+        
                                 </div>
-                                <div class="tool_content_img">
-                                    <img src="./../../assets/img/infra/welding/mig.jpg" loading="lazy"></img>
+                            </div>
+                        </div>
+                        <div class="tool_list_accordion">
+                            <button class="tool_accordion" disabled>Spot Welding <span>25 KVA</span></button>
+                            <div class="tool_panel">
+                                <div class="tool_content">
+                                    <div class="tool_content_details">
+                                        <p class="about__description">Spot Welding machines use a method called resistance spot
+                                            welding to join overlapping metals between two electrodes using electrical
+                                            resistance. Squeezing the workpieces between the electrodes applies pressure, and
+                                            the passage of welding current through the resistive metals generates heat.</p>
+                                    </div>
+                                    <div class="tool_content_img">
+                                        <img src="./../../assets/img/infra/welding/8kva-spot-welding-machine-500x500 (1).webp"
+                                            style="max-width: 40%;" loading="lazy"></img>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+        
+                        <div class="tool_list_accordion">
+                            <button class="tool_accordion" disabled>Projection welding <span>15 KVA</span> </button>
+                            <div class="tool_panel">
+                                <div class="tool_content">
+                                    <div class="tool_content_details">
+                                        <p class="about__description">Projection welding is a form of resistance welding which
+                                            uses pressure and electrical current to join two or more metal parts that have been
+                                            designed to meet at one or more specific points with the maximum amount of contact.
+                                            This allows for more efficient welding with less energy and greater weld strength.
+                                        </p>
+                                    </div>
+                                    <div class="tool_content_img">
+                                        <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg" loading="lazy"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="tool_list_accordion">
+                            <button class="tool_accordion" disabled>Robotic welding <span> 1500 MM</span></button>
+                            <div class="tool_panel">
+                                <div class="tool_content">
+                                    <div class="tool_content_details">
+                                        <p class="about__description">Robotic welding is a highly advanced version of automated
+                                            welding, in which machines conduct the welding, but welders still control and
+                                            supervise the process. The use of robotic technology allows for precise and quick
+                                            results, less waste, and greater safety.</p>
+                                    </div>
+                                    <div class="tool_content_img">
+                                        <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg" loading="lazy"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weldind_col" >
 
-                        </div>
                     </div>
-                </div>
-                <div class="tool_list_accordion">
-                    <button class="tool_accordion">Spot Welding <span>25 KVA</span></button>
-                    <div class="tool_panel">
-                        <div class="tool_content">
-                            <div class="tool_content_details">
-                                <p class="about__description">Spot Welding machines use a method called resistance spot
-                                    welding to join overlapping metals between two electrodes using electrical
-                                    resistance. Squeezing the workpieces between the electrodes applies pressure, and
-                                    the passage of welding current through the resistive metals generates heat.</p>
-                            </div>
-                            <div class="tool_content_img">
-                                <img src="./../../assets/img/infra/welding/8kva-spot-welding-machine-500x500 (1).webp"
-                                    style="max-width: 40%;" loading="lazy"></img>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="tool_list_accordion">
-                    <button class="tool_accordion">Projection welding <span>15 KVA</span> </button>
-                    <div class="tool_panel">
-                        <div class="tool_content">
-                            <div class="tool_content_details">
-                                <p class="about__description">Projection welding is a form of resistance welding which
-                                    uses pressure and electrical current to join two or more metal parts that have been
-                                    designed to meet at one or more specific points with the maximum amount of contact.
-                                    This allows for more efficient welding with less energy and greater weld strength.
-                                </p>
-                            </div>
-                            <div class="tool_content_img">
-                                <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg" loading="lazy"></img>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="tool_list_accordion">
-                    <button class="tool_accordion">Robotic welding <span> 1500 MM</span></button>
-                    <div class="tool_panel">
-                        <div class="tool_content">
-                            <div class="tool_content_details">
-                                <p class="about__description">Robotic welding is a highly advanced version of automated
-                                    welding, in which machines conduct the welding, but welders still control and
-                                    supervise the process. The use of robotic technology allows for precise and quick
-                                    results, less waste, and greater safety.</p>
-                            </div>
-                            <div class="tool_content_img">
-                                <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg" loading="lazy"></img>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
             </div>

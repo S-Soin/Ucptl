@@ -230,7 +230,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="./index.html" class="nav__link active-link">HOME</a>
+                        <a href="./../index.html" class="nav__link active-link">HOME</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">ABOUT</a>
@@ -316,7 +316,7 @@
 
         <!--==================== ABOUT Fedicom ====================-->
         <section class="about section" id="about">
-            <div class="about__container container grid">
+            <div class="about__container container grid" style="width: 75%;">
                 <div class="about__data">
                     <h2 class="section__title about__title"><b>Management
                             Team</b></h2>
@@ -376,8 +376,8 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            /* justify-content: center; */
-            justify-content: space-between;
+            justify-content: center;
+            /* justify-content: space-between; */
             align-items: self-start;
             width: 90%;
             margin: auto;
@@ -391,8 +391,8 @@
                         <h3 class="featured__title">MISSION</h3>
                         <!-- <span class="featured__price">$1050</span> -->
                     </div>
-                    <div id="about_mission" style="display: none;">
-                        <p class="about__description">
+                    <div id="about_mission" style="display: block;">
+                        <p class="about__description" style="height: 7rem;">
                             Our mission is to continuously expand by
                             improving quality, process and productivity
                             utilizing
@@ -401,10 +401,10 @@
                         </p>
 
                     </div>
-                    <a>
+                    <!-- <a>
                         <button class="button featured__button" id="about_mission_btn" style="transform: translateY(0);
                 opacity: 1;">Know more</button>
-                    </a>
+                    </a> -->
                 </article>
                 <article class="featured__card" style="max-width: 320px;padding: 2rem 2rem 3rem 2rem;">
                     <!-- <span class="featured__tag">8 +</span> -->
@@ -415,17 +415,17 @@
                         <h3 class="featured__title">VISION</h3>
                         <!-- <span class="featured__price">$1050</span> -->
                     </div>
-                    <div id="about_vission" style="display: none;">
-                        <p class="about__description">To be dynamic ,
+                    <div id="about_vission" style="display: block;">
+                        <p class="about__description" style="height: 7rem;">To be dynamic ,
                             Innovative and achieve leadership status in
                             sheet
                             metal components manufacturing in India by best
                             in class products and services. </p>
                     </div>
-                    <a>
+                    <!-- <a>
                         <button class="button featured__button" id="about_vission_btn" style="transform: translateY(0);
                         opacity: 1;">Know more</button>
-                    </a>
+                    </a> -->
                 </article>
 
                 <!-- <article class="featured__card" style="max-width: 320px;padding: 2rem 2rem 3rem 2rem;"> -->
@@ -458,8 +458,8 @@
                         <h3 class="featured__title">QUALITY</h3>
                         <!-- <span class="featured__price">$1050</span> -->
                     </div>
-                    <div id="about_quality" style="display: none;">
-                        <p class="about__description">
+                    <div id="about_quality" style="display: block;">
+                        <p class="about__description" style="height: 7rem;">
                             UCTPL is committed to provide products at the
                             highest quality standards that meet or exceed
                             customer requirements and in accordance with
@@ -467,10 +467,10 @@
                         </p>
 
                     </div>
-                    <a>
+                    <!-- <a>
                         <button class="button featured__button" id="about_quality_btn" style="transform: translateY(0);
                         opacity: 1;">Know more</button>
-                    </a>
+                    </a> -->
                 </article>
             </div>
 
@@ -718,19 +718,22 @@
             </div>
             <br />
             <br /><br />
-            <div style="width: 90%; margin: auto; ">
+            <div style="width: 75%; margin: auto; ">
                 <img src="../assets/img/AboutUs/1.png" alt>
             </div>
 
             <br />
-            <div style="width: 90%; margin: auto;">
+            <br/>
+            <br/>
+            <br/>
+            <div style="width: 75%; margin: auto;">
                 <div class="about_finalApproach">
                     <!-- <h2 class="section__title about__title">Innovation</h2> -->
 
-                    <h1 style="margin-bottom: 2rem;">Upcoming Facilities 2023-25...</h1>
+                    <h1 style="margin-bottom: 2rem;">Upcoming Facilities 2024-25...</h1>
 
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">VMC Machine</button>
+                        <button class="tool_accordion" disabled>VMC Machine</button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -746,7 +749,7 @@
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">WIRECUT Machine</button>
+                        <button class="tool_accordion" disabled>WIRECUT Machine</button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -763,7 +766,7 @@
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">LASER CUT</button>
+                        <button class="tool_accordion" disabled>LASER CUT</button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -779,8 +782,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tool_list_accordion">
-                        <button class="tool_accordion">PRESS BRAKE</button>
+                    <div class="tool_list_accordion" >
+                        <button class="tool_accordion" disabled>PRESS BRAKE</button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
@@ -797,7 +800,7 @@
                         </div>
                     </div>
                     <div class="tool_list_accordion">
-                        <button class="tool_accordion">TURRET PUNCHING</button>
+                        <button class="tool_accordion" disabled>TURRET PUNCHING</button>
                         <div class="tool_panel">
                             <div class="tool_content">
                                 <div class="tool_content_details">
