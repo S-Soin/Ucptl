@@ -428,7 +428,8 @@ p{
 }
 
 .nav__link:hover {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--header-text-color);
 }
 
 .nav__close {
@@ -1058,7 +1059,8 @@ p{
     text-transform: initial;
   }
   .nav__link:hover {
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    color:var(--header-text-color)
   }
   .nav__dark {
     position: initial;
@@ -1755,7 +1757,8 @@ justify-self: center;
   /* font-size: 16px;  
   border: none;
   outline: none; */
-  color: var(--header-text-color);
+  /* color: var(--header-text-color); */
+  color:var(--header-text-color) !important;
   font-weight: var(--font-semi-bold);
   /* padding: 14px 16px;
   background-color: inherit;
@@ -1769,7 +1772,8 @@ justify-self: center;
   outline: none; */
   background-color: var(--header-background-color);
 
-  color: var(--header-text-color);
+  /* color: var(--header-text-color); */
+  color:var(--header-text-color) !important;
   font-weight: var(--font-semi-bold);
 }
 

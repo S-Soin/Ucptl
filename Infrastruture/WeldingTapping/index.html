@@ -125,10 +125,12 @@
             font-size: 30px;
             color: #fff;
         }
-        .weldin_row{
-            /* display: flex;
-             */
-             width: 100%;
+
+        .weldin_row {
+            display: inline-flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         @media screen and (min-width:800px) {
@@ -140,23 +142,31 @@
                 margin-right: -0px;
                 height: 100%;
             }
-            .weldind_col{
+
+            .weldind_col {
                 width: 50%;
             }
         }
-        @media  (max-width:320px) { .weldind_col{
+
+        @media (max-width:320px) {
+            .weldind_col {
                 width: 100%;
-            }}
-@media  (max-width:480px) { .weldind_col{
+            }
+        }
+
+        @media (max-width:480px) {
+            .weldind_col {
                 width: 100%;
-            }}
+            }
+        }
 
 
         @media screen and (max-width:799px) {
             .custom-model-inner {
                 margin-top: 45px;
             }
-             .weldind_col{
+
+            .weldind_col {
                 width: 100%;
             }
         }
@@ -173,88 +183,88 @@
 
 <body>
     <header class="headertop"
-            style="position: sticky !important; border-radius:0px; padding:4px 10px; color:white; background-color: black;">
+        style="position: sticky !important; border-radius:0px; padding:4px 10px; color:white; background-color: black;">
 
-            <div class="container" style="display: flex; align-content: center;
+        <div class="container" style="display: flex; align-content: center;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;">
 
-                <div>
-                    <a href="mailto:info@UCTPL.com" class="footer__link"
-                        style="color:white; "><i class="ri-mail-send-line"></i>
-                        info@UCTPL.com</a>
-                </div>
+            <div>
+                <a href="mailto:info@UCTPL.com" class="footer__link" style="color:white; "><i
+                        class="ri-mail-send-line"></i>
+                    info@UCTPL.com</a>
+            </div>
 
-                <div style="text-align: center;">
+            <div style="text-align: center;">
 
-                    An IATF 16949:2016 and 9001:2015 Certified Company
-
-                </div>
+                An IATF 16949:2016 and 9001:2015 Certified Company
 
             </div>
-        </header>
 
-        <section>
+        </div>
+    </header>
 
-            <div class="aboveHeader container grid" style="
+    <section>
+
+        <div class="aboveHeader container grid" style="
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
     ">
-    
-                <div class="logoo__container">
-    
-                    <img src="./../../assets/img/unicom_log.jpg" style="width:180px; height:60px; padding: 5px;
+
+            <div class="logoo__container">
+
+                <img src="./../../assets/img/unicom_log.jpg" style="width:180px; height:60px; padding: 5px;
                     background-color: white;
                     border-radius: 5px !important;">
-                    <!-- <a href="#" class="nav__logo"> </a>     -->
-    
-                </div>
-    
-                <div class="cert__container" style="padding:15px">
-    
-                    <h2 style="text-align: center;">
-                        UNITED COMPONENTS AND TOOLS PRIVATE LIMITED
-                    </h2>
-    
-                    <!-- <p style="text-align: center; font-weight: 800;">
+                <!-- <a href="#" class="nav__logo"> </a>     -->
+
+            </div>
+
+            <div class="cert__container" style="padding:15px">
+
+                <h2 style="text-align: center;">
+                    UNITED COMPONENTS AND TOOLS PRIVATE LIMITED
+                </h2>
+
+                <!-- <p style="text-align: center; font-weight: 800;">
                         An IATF 16949:2016 and 9001:2015 Certified Company
                     </p> -->
-    
-                </div>
-    
-    
+
             </div>
-    
-        </section>
-
-        <header class="header navheader" id="header" style="position: sticky !important; top:28px; border-radius:0px;">
 
 
-            <nav class="nav container">
-    
-                <!-- <div class="logo__container">
+        </div>
+
+    </section>
+
+    <header class="header navheader" id="header" style="position: sticky !important; top:28px; border-radius:0px;">
+
+
+        <nav class="nav container">
+
+            <!-- <div class="logo__container">
     placeholder
                 </div> -->
-                <br />
-    
-    
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="../../index.html" class="nav__link active-link">HOME</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">ABOUT</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../../Products/ALL/index.html" class="nav__link">PRODUCTS</a>
-    
-                            <!-- <div class="dropdown">
+            <br />
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../../index.html" class="nav__link active-link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">ABOUT</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../Products/ALL/index.html" class="nav__link">PRODUCTS</a>
+
+                        <!-- <div class="dropdown">
                                 <div class=" dropbtn">PRODUCTS
                                     <i class="ri-arrow-drop-down-line"></i>
                                 </div>
@@ -266,51 +276,51 @@
     
                                 </div>
                             </div> -->
-                        </li>
-                        <li class="nav__item">
-                            <div class="dropdown">
-                                <div class=" dropbtn">FACILITIES
-                                    <i class="ri-arrow-drop-down-line"></i>
-                                </div>
-                                <div class="dropdown-content">
-                                    <!-- <a class="nav__link" href="../Research_and_development/">Research & Development</a> -->
-                                    <!-- <a class="nav__link" href="../TechnicalUpgradation/">Technical Upgradation </a> -->
-                                    <a class="nav__link" href="../Tool_room/">Tool Room</a>
-                                    <a class="nav__link" href="../PressShop/">Press Shop</a>
-                                    <a class="nav__link" href="../WeldingTapping/index.html">Welding</a>
-                                    <a class="nav__link" href="../InspectionTesting/">Quality Management</a>
-                                    <a class="nav__link" href="../RawMaterial/">Raw Material</a>
-                                </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="dropdown">
+                            <div class=" dropbtn">FACILITIES
+                                <i class="ri-arrow-drop-down-line"></i>
                             </div>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../../Customer/index.html" class="nav__link">CUSTOMERS</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../../Contact/index.html" class="nav__link">CONTACT</a>
-                        </li>
-                    </ul>
-    
-                    <div class="nav__dark">
-                        <!-- Theme change button -->
-                        <span class="change-theme-name">Dark mode</span>
-                        <i class="ri-moon-line change-theme" id="theme-button"></i>
-                    </div>
-                    <!-- 
+                            <div class="dropdown-content">
+                                <!-- <a class="nav__link" href="../Research_and_development/">Research & Development</a> -->
+                                <!-- <a class="nav__link" href="../TechnicalUpgradation/">Technical Upgradation </a> -->
+                                <a class="nav__link" href="../Tool_room/">Tool Room</a>
+                                <a class="nav__link" href="../PressShop/">Press Shop</a>
+                                <a class="nav__link" href="../WeldingTapping/index.html">Welding</a>
+                                <a class="nav__link" href="../InspectionTesting/">Quality Management</a>
+                                <a class="nav__link" href="../RawMaterial/">Raw Material</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../Customer/index.html" class="nav__link">CUSTOMERS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../Contact/index.html" class="nav__link">CONTACT</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+                <!-- 
                     <div style="width: 25px;">
     
                     </div> -->
-    
-                    <i class="ri-close-line nav__close" id="nav-close"></i>
-                </div>
-    
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-function-line"></i>
-                </div>
-    
-    
-            </nav>
-        </header>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+
+
+        </nav>
+    </header>
     <main class="main">
         <section class="subscribe section himg" style="padding-top: 12px; border-radius: 0px !important;">
             <div style="width: 100%; height:200px; padding:0%;   position: relative; text-align: center;">
@@ -346,13 +356,13 @@
                                 <div class="tu_upgradation_detail">
                                     <p class="about__description">We at UCTPL offer both robotic and manual MIG welding
                                         and TIG welding, together with comprehensive metal dressing as part of its
-                                        precision sheet metal fabrication business.<br/><br/>
+                                        precision sheet metal fabrication business.<br /><br />
                                         UCTPL employs two ABB robot welding cells to ensure consistency and economy on
                                         longer production runs of custom sheet metal fabrications and metal products. 
                                         Both cells are equipped with electric turntables allowing maximum productivity. 
                                         The largest system has rotary manipulators allowing work pieces to be turned
                                         independently of the robot position.
-                                        <br/><br/>
+                                        <br /><br />
                                         Maximum welding robot capacity for components is 1500mm long.
 
                                     </p>
@@ -366,9 +376,9 @@
 
             </div>
         </section>
-        
-        <br/>
-        <br/>
+
+        <br />
+        <br />
         <article class="wrapper">
             <div class="marquee">
                 <div class="marquee__group">
@@ -390,7 +400,7 @@
                         style="height: 200px;" loading="lazy">
                     <img src="./../../assets/img/infra/welding/slide9.JPG" alt="Deam info" class="featured__img"
                         style="height: 200px;" loading="lazy">
-                   
+
                     <img src="./../../assets/img/infra/welding/slide12.jpg" alt="Deam info" class="featured__img"
                         style="height: 200px;" loading="lazy">
                 </div>
@@ -439,8 +449,8 @@
                 </div>
             </div> -->
         </article>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <section>
             <div class="tool_room_machine_list">
@@ -453,17 +463,26 @@
                                 <div class="tool_panel">
                                     <div class="tool_content">
                                         <div class="tool_content_details">
-                                            <p class="about__description">MIG welding uses a constant voltage power supply to
-                                                create an electric arc that fuses the base metal with a filler wire that is
-                                                continuously fed through the welding torch. At the same time, an inert shielding
-                                                gas is also fed through the gun, to protect the weld pool from atmospheric
-                                                contamination.</p>
+                                            <!-- <p class="about__description">MIG welding uses a constant voltage power
+                                                supply to
+                                                create an electric arc that fuses the base metal with a filler wire that
+                                                is
+                                                continuously fed through the welding torch. At the same time, an inert
+                                                shielding
+                                                gas is also fed through the gun, to protect the weld pool from
+                                                atmospheric
+                                                contamination.</p> -->
+                                                <!-- <ul>
+                                                    <li class="pressShopAccordionList"><h5> Type of Machine  </h5><span>=></span>  <p></p></li>
+                                                    <li class="pressShopAccordionList"><h5> Capacity  </h5><span>=></span>  <p>3x300</p></li>
+                                                    <li class="pressShopAccordionList"><h5> Quantity  </h5><span>=></span>  <p>2</p></li>
+                                                </ul> -->
                                         </div>
                                         <div class="tool_content_img">
                                             <img src="./../../assets/img/infra/welding/mig.jpg" loading="lazy"></img>
                                         </div>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
@@ -472,10 +491,13 @@
                             <div class="tool_panel">
                                 <div class="tool_content">
                                     <div class="tool_content_details">
-                                        <p class="about__description">Spot Welding machines use a method called resistance spot
+                                        <p class="about__description">Spot Welding machines use a method called
+                                            resistance spot
                                             welding to join overlapping metals between two electrodes using electrical
-                                            resistance. Squeezing the workpieces between the electrodes applies pressure, and
-                                            the passage of welding current through the resistive metals generates heat.</p>
+                                            resistance. Squeezing the workpieces between the electrodes applies
+                                            pressure, and
+                                            the passage of welding current through the resistive metals generates heat.
+                                        </p>
                                     </div>
                                     <div class="tool_content_img">
                                         <img src="./../../assets/img/infra/welding/8kva-spot-welding-machine-500x500 (1).webp"
@@ -484,48 +506,79 @@
                                 </div>
                             </div>
                         </div>
-        
+
                         <div class="tool_list_accordion">
                             <button class="tool_accordion" disabled>Projection welding <span>15 KVA</span> </button>
                             <div class="tool_panel">
                                 <div class="tool_content">
                                     <div class="tool_content_details">
-                                        <p class="about__description">Projection welding is a form of resistance welding which
-                                            uses pressure and electrical current to join two or more metal parts that have been
-                                            designed to meet at one or more specific points with the maximum amount of contact.
-                                            This allows for more efficient welding with less energy and greater weld strength.
+                                        <p class="about__description">Projection welding is a form of resistance welding
+                                            which
+                                            uses pressure and electrical current to join two or more metal parts that
+                                            have been
+                                            designed to meet at one or more specific points with the maximum amount of
+                                            contact.
+                                            This allows for more efficient welding with less energy and greater weld
+                                            strength.
                                         </p>
                                     </div>
                                     <div class="tool_content_img">
-                                        <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg" loading="lazy"></img>
+                                        <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg"
+                                            loading="lazy"></img>
                                     </div>
                                 </div>
                             </div>
                         </div>
-        
+                        <div class="tool_list_accordion">
+                            <button class="tool_accordion" disabled>Projection welding <span>10 KVA</span> </button>
+                            <div class="tool_panel">
+                                <div class="tool_content">
+                                    <div class="tool_content_details">
+                                        <p class="about__description">Projection welding is a form of resistance welding
+                                            which
+                                            uses pressure and electrical current to join two or more metal parts that
+                                            have been
+                                            designed to meet at one or more specific points with the maximum amount of
+                                            contact.
+                                            This allows for more efficient welding with less energy and greater weld
+                                            strength.
+                                        </p>
+                                    </div>
+                                    <div class="tool_content_img">
+                                        <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg"
+                                            loading="lazy"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="tool_list_accordion">
                             <button class="tool_accordion" disabled>Robotic welding <span> 1500 MM</span></button>
                             <div class="tool_panel">
                                 <div class="tool_content">
                                     <div class="tool_content_details">
-                                        <p class="about__description">Robotic welding is a highly advanced version of automated
-                                            welding, in which machines conduct the welding, but welders still control and
-                                            supervise the process. The use of robotic technology allows for precise and quick
+                                        <p class="about__description">Robotic welding is a highly advanced version of
+                                            automated
+                                            welding, in which machines conduct the welding, but welders still control
+                                            and
+                                            supervise the process. The use of robotic technology allows for precise and
+                                            quick
                                             results, less waste, and greater safety.</p>
                                     </div>
                                     <div class="tool_content_img">
-                                        <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg" loading="lazy"></img>
+                                        <img src="./../../assets/img/infra/tool/Surface-Grinder.jpg"
+                                            loading="lazy"></img>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="weldind_col" >
-
+                    <div class="weldind_col">
+                        <!-- <p>check second part</p> -->
                     </div>
 
                 </div>
-                
+
             </div>
 
             </div>
@@ -768,7 +821,7 @@
             </svg>
           </button> -->
 
-       
+
 
         <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
             <defs>
