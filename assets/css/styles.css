@@ -9,7 +9,7 @@
   --header-height: 3rem;
   --header-color: #ffffff;
   --header-text-color: #ffffff;
-  --header-text-color-hover: #5FA5C8;
+  --header-text-color-hover: #abafb0;
   --swiper-navigation-color: #ffffff;
 
   --box-shadow-color: rgb(26 102 124 / 40%) -2px 0px 20px 0px;
@@ -74,6 +74,11 @@
   --img-scale: scale(1.1);
 }
 
+.marquee {
+
+mask-image: none !important;
+
+}
 
 .ribbontop{
 
@@ -188,6 +193,7 @@ body.dark-theme {
   --header-background-color: #0e2a38;
   --header-color: hsl(225, 39%, 21%);
   --header-text-color: #e5ecef;
+  --header-text-color-hover: #9a9d9f;
   --swiper-navigation-color: var(--header-text-color);
 
 
@@ -462,7 +468,7 @@ p{
 
 .scroll-header :hover{
 
-    color: var(--text-color) !important;
+    color: var(--header-text-color-hover) !important;
 
 }
 
@@ -1546,7 +1552,7 @@ justify-self: center;
 
 @media screen and (min-width: 1200px) {
   .home__img1 {
-    height: 420px;
+    height: calc(100vh - 170px);
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -1778,7 +1784,7 @@ justify-self: center;
 }
 
 .dropdown:hover .dropbtn:hover {
-  color: var(--text-color);
+  color: var(--header-text-color-hover);
 }
 
 .dropbtn {
