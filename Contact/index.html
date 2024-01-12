@@ -817,7 +817,7 @@ placeholder
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form>
+            <form >
             <h3 class="title">Connect With Us</h3>
             <div class="input-container">
               <input type="text" id="name" name="name" class="input" />
@@ -839,8 +839,10 @@ placeholder
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="button" style="width: 100%;     text-align: left;" value="Send" class="btn" id="submitbtn"
-              class="button_container" />
+
+              <input type="button" style="width: 100%;  text-align: left;" value="Send" class="btn" id="submitbtn"
+              class="button_container" /> 
+
           </form>
         </div>
       </div>
@@ -848,6 +850,7 @@ placeholder
 
     <script>
 
+      // url of google script app below one is not complete
       let url = "https://script.google.com/macros/s/";
 
       let form = document.querySelector("form");
@@ -882,9 +885,8 @@ placeholder
           return false;
         }
 
-
-
-        let data = new FormData(form);
+        // uncomment below code if you want to use google for storing data
+        /*let data = new FormData(form);
         console.log(data);
 
         let datamap = {
@@ -913,8 +915,11 @@ placeholder
 
 
         // pop up modal form submitted
-        alert("Message Sent!");
+        alert("Message Sent!");*/
 
+
+        // comment below function call if don't want mailto
+        openmail();
 
         //clear form
         form.reset();
@@ -924,7 +929,9 @@ placeholder
 
       const inputs = document.querySelectorAll(".input");
 
-      /*function openmail() {
+
+      // comment this function if don't want mailto.
+      function openmail() {
 
         subject = document.getElementsByName('name')[0].value + ' - ' + document.getElementsByName('phone')[0].value;
 
@@ -979,11 +986,11 @@ placeholder
         if (validate) {
           //console.log('mailto:test@example.com?subject='+subject+'&body='+body);
 
-          window.open('mailto:sales@fedicoms.com;info@fedicoms.com?subject=' + subject + '&body=' + body);
+          window.open('mailto:enquiry@unicomtools.com;?subject=' + subject + '&body=' + body);
           
         }
       }
-      */
+      
 
       function focusFunc() {
         let parent = this.parentNode;
