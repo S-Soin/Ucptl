@@ -19,6 +19,9 @@
 
   --subscribe-container-color: #196186;
 
+  --txtOvrSlidesBgcolor: rgba(63, 63, 63, 0.3) !important;
+  --txtOvrSlidesTxtcolor: rgb(255, 255, 255) !important;
+
 
   /*========== Colors ==========*/
   /* Change favorite color to match images */
@@ -86,6 +89,20 @@ background-color: black;
 
 }
 
+.txtOvrSlides-right {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--txtOvrSlidesBgcolor);
+  color: var(--txtOvrSlidesTxtcolor);
+  backdrop-filter: blur(5px) !important;
+  padding:25px;
+}
+
+.txtOvrSlides-right h1 {
+  color: var(--txtOvrSlidesTxtcolor);
+}
 
 /* ========== Media Query ========*/
 
@@ -207,6 +224,8 @@ body.dark-theme {
   --first-color: 		#007dc2;
   --first-color-alt: 	hsl(203, 42%, 55%);
 
+  --txtOvrSlidesBgcolor: rgba(0, 0, 0, 0.3) !important;
+  --txtOvrSlidesTxtcolor: white !important;
 
   --first-color-second: hsl(225, 37%, 31%);
     --title-color: hsl(190, 24%, 95%);
