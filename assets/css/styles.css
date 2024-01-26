@@ -139,6 +139,14 @@ background-color: black;
 @media screen and (max-width:767px){
 
   .txtOvrSlides-right {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transform: none;
+    background-color: var(--header-background-color);
+    color: var(--txtOvrSlidesTxtcolor);
+    backdrop-filter: blur(5px) !important;
+    padding:25px;
     width: 100% !important;
   }
 
