@@ -77,6 +77,10 @@
   --img-scale: scale(1.1);
 }
 
+.nav__menu {
+  background-color: var(--header-background-color) !important;
+}
+
 .marquee {
 
 mask-image: none !important;
@@ -87,6 +91,15 @@ mask-image: none !important;
 
 background-color: black;
 
+}
+
+.logoo__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .txtOvrSlides-right {
@@ -124,6 +137,10 @@ background-color: black;
 }
 
 @media screen and (max-width:767px){
+
+  .txtOvrSlides-right {
+    width: 100% !important;
+  }
 
   .gear__anm{
     display: none !important;
@@ -1669,6 +1686,16 @@ justify-self: center;
   transition: 0.3s;
   box-shadow: var(--box-shadow-color);
 
+}
+
+.certificate__container {
+  width: calc((100% - 100px)/2);
+  min-width: 360px;
+  padding: 2rem 2rem 1rem 2rem !important;
+}
+
+.certificate__container:hover {
+  padding: 1.5rem 1.5rem 1rem 1.5rem !important;
 }
 
 .featured__tag {
