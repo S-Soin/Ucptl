@@ -19,6 +19,9 @@
 
   --subscribe-container-color: #196186;
 
+  --txtOvrSlidesBgcolor: rgba(63, 63, 63, 0.3) !important;
+  --txtOvrSlidesTxtcolor: rgb(255, 255, 255) !important;
+
 
   /*========== Colors ==========*/
   /* Change favorite color to match images */
@@ -74,6 +77,10 @@
   --img-scale: scale(1.1);
 }
 
+.nav__menu {
+  background-color: var(--header-background-color) !important;
+}
+
 .marquee {
 
 mask-image: none !important;
@@ -86,6 +93,29 @@ background-color: black;
 
 }
 
+.logoo__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.txtOvrSlides-right {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--txtOvrSlidesBgcolor);
+  color: var(--txtOvrSlidesTxtcolor);
+  backdrop-filter: blur(5px) !important;
+  padding:25px;
+}
+
+.txtOvrSlides-right h1 {
+  color: var(--txtOvrSlidesTxtcolor);
+}
 
 /* ========== Media Query ========*/
 
@@ -107,6 +137,18 @@ background-color: black;
 }
 
 @media screen and (max-width:767px){
+
+  .txtOvrSlides-right {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transform: none;
+    background-color: var(--header-background-color);
+    color: var(--txtOvrSlidesTxtcolor);
+    backdrop-filter: blur(5px) !important;
+    padding:25px;
+    width: 100% !important;
+  }
 
   .gear__anm{
     display: none !important;
@@ -207,6 +249,8 @@ body.dark-theme {
   --first-color: 		#007dc2;
   --first-color-alt: 	hsl(203, 42%, 55%);
 
+  --txtOvrSlidesBgcolor: rgba(0, 0, 0, 0.3) !important;
+  --txtOvrSlidesTxtcolor: white !important;
 
   --first-color-second: hsl(225, 37%, 31%);
     --title-color: hsl(190, 24%, 95%);
@@ -1651,6 +1695,13 @@ justify-self: center;
   box-shadow: var(--box-shadow-color);
 
 }
+
+.certificate__container {
+  width: calc((100% - 100px)/2);
+  min-width: 360px;
+  padding: 2rem 2rem 1rem 2rem !important;
+}
+
 
 .featured__tag {
   background-color: var(--first-color);

@@ -16,7 +16,7 @@
   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="../assets/css/styles.css">
 
-  <title>Fedicoms</title>
+  <title>UCTPL</title>
 
   <!-- for google map popup from footer -->
 
@@ -579,7 +579,7 @@
 
 <div style="text-align: center;">
 
-An IATF 16949:2016 and 9001:2015 Certified Company
+An IATF 16949:2016 and ISO 9001:2015 Certified Company
 
 </div>
 
@@ -611,6 +611,10 @@ justify-content: space-around;
             border-radius: 5px !important;">
             <!-- <a href="#" class="nav__logo"> </a>     -->
 
+            <img src="./../assets/img/make-in-india.webp" style="width:160px; height:60px; padding: 5px;
+                background-color: white;
+                border-radius: 5px !important;">
+
         </div>
 
         <div class="cert__container" style="padding:15px">
@@ -620,7 +624,7 @@ justify-content: space-around;
             </h2>
 
             <p style="text-align: center; font-weight: 800;">
-                An IATF 16949:2016 and 9001:2015 Certified Company
+                An IATF 16949:2016 and ISO 9001:2015 Certified Company
             </p>
 
         </div>
@@ -680,11 +684,11 @@ placeholder
                       <div class="dropdown-content">
                           <!-- <a class="nav__link" href="./../Infrastruture/Research_and_development/">Research & Development</a> -->
                           <!-- <a class="nav__link" href="./../Infrastruture/TechnicalUpgradation/">Technical Upgradation </a> -->
-                          <a class="nav__link" href="./../Infrastruture/Tool_room/">Tool Room</a>
+                          <a class="nav__link" href="./../Infrastruture/Tool_room/">R&D / Tool Room</a>
                           <a class="nav__link" href="./../Infrastruture/PressShop/">Press Shop</a>
                           <a class="nav__link" href="./../Infrastruture/WeldingTapping/">Welding</a>
                           <a class="nav__link" href="./../Infrastruture/InspectionTesting/">Quality Management</a>
-                          <a class="nav__link" href="./../Infrastruture/RawMaterial/">Raw Material</a>
+                          <a class="nav__link" href="./../Infrastruture/RawMaterial/">Raw Material / Logistics</a>
                       </div>
                   </div>
               </li>
@@ -770,10 +774,19 @@ placeholder
                 enquiry@unicomtools.com</a>
             </div>
             
-
             <div class="information">
-              <a href="tel:01202989445" target="_blank" style="color:#1d3e72;">
+              <a href="mailto:marketing@unicomtools.com" style="color:#1d3e72;"><i class="ri-mail-send-line"></i>
+                marketing@unicomtools.com</a>
+            </div>
+
+            <br/>
+
+            <div class="information" style="display: flex; flex-direction: row;">
+              <a href="tel:01202989445" target="_blank" style="color:#1d3e72; width:50%;">
                 <i class="ri-phone-fill"></i> 012-0298-9445
+              </a>
+              <a href="tel:01206950430" target="_blank" style="color:#1d3e72; width:50%;">
+                <i class="ri-phone-fill"></i> 012-0695-0430
               </a>
             </div>
             
@@ -817,7 +830,7 @@ placeholder
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form>
+            <form >
             <h3 class="title">Connect With Us</h3>
             <div class="input-container">
               <input type="text" id="name" name="name" class="input" />
@@ -839,8 +852,10 @@ placeholder
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="button" style="width: 100%;     text-align: left;" value="Send" class="btn" id="submitbtn"
-              class="button_container" />
+
+              <input type="button" style="width: 100%;  text-align: left;" value="Send" class="btn" id="submitbtn"
+              class="button_container" /> 
+
           </form>
         </div>
       </div>
@@ -848,6 +863,7 @@ placeholder
 
     <script>
 
+      // url of google script app below one is not complete
       let url = "https://script.google.com/macros/s/";
 
       let form = document.querySelector("form");
@@ -882,9 +898,8 @@ placeholder
           return false;
         }
 
-
-
-        let data = new FormData(form);
+        // uncomment below code if you want to use google for storing data
+        /*let data = new FormData(form);
         console.log(data);
 
         let datamap = {
@@ -913,8 +928,11 @@ placeholder
 
 
         // pop up modal form submitted
-        alert("Message Sent!");
+        alert("Message Sent!");*/
 
+
+        // comment below function call if don't want mailto
+        openmail();
 
         //clear form
         form.reset();
@@ -924,7 +942,9 @@ placeholder
 
       const inputs = document.querySelectorAll(".input");
 
-      /*function openmail() {
+
+      // comment this function if don't want mailto.
+      function openmail() {
 
         subject = document.getElementsByName('name')[0].value + ' - ' + document.getElementsByName('phone')[0].value;
 
@@ -979,11 +999,11 @@ placeholder
         if (validate) {
           //console.log('mailto:test@example.com?subject='+subject+'&body='+body);
 
-          window.open('mailto:sales@fedicoms.com;info@fedicoms.com?subject=' + subject + '&body=' + body);
+          window.open('mailto:enquiry@unicomtools.com;?subject=' + subject + '&body=' + body);
           
         }
       }
-      */
+      
 
       function focusFunc() {
         let parent = this.parentNode;
@@ -1094,14 +1114,15 @@ placeholder
                     <div class="footer__data">
                         <h3 class="footer__subtitle">Products</h3>
                         <ul>
-                                <li class="footer__item">
-                                    <a href="./../Products/ALL/" class="footer__link"><i
-                                            class="ri-tools-fill"></i> Electrical</a>
-                                </li>
+
                                 <li class="footer__item">
                                     <a href="./../Products/ALL/" class="footer__link"><i class="ri-tools-fill"></i>
                                         Automotive</a>
                                 </li>
+                                <li class="footer__item">
+                                  <a href="./../Products/ALL/" class="footer__link"><i
+                                          class="ri-tools-fill"></i> Electrical</a>
+                              </li>
                                 <li class="footer__item">
                                     <a href="./../Products/ALL/" class="footer__link"><i class="ri-tools-fill"></i>
                                         Home Appliances</a>
@@ -1118,7 +1139,7 @@ placeholder
                             </li> -->
                             <li class="footer__item">
                                 <a href="./../Infrastruture/Tool_room/" class="footer__link"><i class="ri-tools-fill"></i>
-                                    Tool Room</a>
+                                    R&D / Tool Room</a>
                             </li>
                             <li class="footer__item">
                                 <a href="./../Infrastruture/PressShop/" class="footer__link"><i class="ri-tools-fill"></i>
@@ -1134,7 +1155,7 @@ placeholder
                             </li>
                             <li class="footer__item">
                                 <a href="./../Infrastruture/RawMaterial/" class="footer__link"><i
-                                        class="ri-tools-fill"></i> Raw Material</a>
+                                        class="ri-tools-fill"></i> Raw Material / Logistics</a>
                             </li>
 
                         </ul>
@@ -1150,9 +1171,15 @@ placeholder
                             </li>
 
                             <li class="footer__item">
-                                <a href="mailto:info@UCTPL.com" class="footer__link"><i class="ri-mail-send-line"></i>
-                                    info@UCTPL.com</a>
+                                <a href="mailto:enquiry@unicomtools.com" class="footer__link"><i class="ri-mail-send-line"></i>
+                                  enquiry@unicomtools.com</a>
                             </li>
+
+                            <li class="footer__item">
+                              <a href="tel:01202989445" class="footer__link"><i class="ri-phone-line"></i>
+                                012-0298-9445</a>
+                            </li>
+
                         </ul>
                     </div>
 
@@ -1197,7 +1224,7 @@ placeholder
                         <!-- <a href="#" class="footer__terms-link">Terms &#38; Agreements</a>
                         <a href="#" class="footer__terms-link">Privacy Policy</a> -->
 
-                        <a href="#" class="footer__terms-link">An IATF 16949:2016 and 9001:2015 Certified Company</a>
+                        <a href="#" class="footer__terms-link">An IATF 16949:2016 and ISO 9001:2015 Certified Company</a>
 
                     </div>
                 </div>
