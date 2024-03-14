@@ -42,7 +42,7 @@
   --scroll-bar-color: hsl(190, 12%, 90%);
   --scroll-thumb-color: hsl(190, 12%, 75%);
   --card-background:hsl(199, 100%, 95%);
-
+ --cert_color:hsl(200, 69%, 31%);
   /*========== Font and typography ==========*/
   --body-font: "Arial", sans-serif;;
   --title-font: "Arial", sans-serif;
@@ -266,6 +266,7 @@ body.dark-theme {
     --scroll-bar-color: hsl(190, 12%, 48%);
     --scroll-thumb-color: hsl(190, 12%, 36%);
     --card-background: hsl(225, 50%, 25%);
+    --cert_color:hsl(190, 24%, 95%);
 
 }
 
@@ -1088,6 +1089,10 @@ p{
   .video__container {
     padding: 0;
   }
+  .subscribe__container {
+    background-color: var(--subscribe-container-color);
+    padding: 3.5rem 0;
+  }
 }
 
 /* For medium devices */
@@ -1103,6 +1108,10 @@ p{
   .subscribe__form {
     width: 470px;
     margin: 0 auto;
+  }
+  .subscribe__container {
+    background-color: var(--subscribe-container-color);
+    padding: 3.5rem 0;
   }
 }
 
@@ -1705,7 +1714,7 @@ justify-self: center;
 
 }
 .cert__container{
-  color:hsl(200, 69%, 31%) ;
+  color:var(--cert_color) ;
 }
 .certificate__container {
   width: calc((100% - 100px)/2);
