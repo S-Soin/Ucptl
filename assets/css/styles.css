@@ -1093,6 +1093,10 @@ p{
     background-color: var(--subscribe-container-color);
     padding: 3.5rem 0;
   }
+  .subscribe__bg {
+    background-color: var(--subscribe-container-color);
+    padding: 2.5rem 0;
+  }
 }
 
 /* For medium devices */
@@ -1112,6 +1116,10 @@ p{
   .subscribe__container {
     background-color: var(--subscribe-container-color);
     padding: 3.5rem 0;
+  }
+  .subscribe__bg {
+    background-color: var(--subscribe-container-color);
+    padding: 2.5rem 0;
   }
 }
 
