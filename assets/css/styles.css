@@ -1981,4 +1981,14 @@ justify-self: center;
   .tool_content .tool_content_details{
     width: 95%;
   }
+  .subscribe__bg {
+    background-color: var(--subscribe-container-color);
+    padding: 2.5rem 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .subscribe__bg {
+    background-color: var(--subscribe-container-color);
+    padding: 2.5rem 0;
+  }
 }
