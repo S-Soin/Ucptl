@@ -1097,6 +1097,9 @@ p{
     background-color: var(--subscribe-container-color);
     padding: 2.5rem 0;
   }
+  .subscribe__bg button{
+    background-color: var(--subscribe-container-color);
+  }
 }
 
 /* For medium devices */
@@ -1120,6 +1123,9 @@ p{
   .subscribe__bg {
     background-color: var(--subscribe-container-color);
     padding: 2.5rem 0;
+  }
+  .subscribe__bg button{
+    background-color: var(--subscribe-container-color);
   }
 }
 
@@ -1227,6 +1233,9 @@ p{
   .subscribe__bg {
     background: none;
     padding: 0;
+  }
+  .subscribe__bg button{
+    background-color: var(--subscribe-container-color);
   }
   .subscribe__container {
     background-color: var(--subscribe-container-color);
@@ -1985,10 +1994,17 @@ justify-self: center;
     background-color: var(--subscribe-container-color);
     padding: 2.5rem 0;
   }
+  .subscribe__bg button{
+    background-color: var(--subscribe-container-color);
+  }
 }
 @media screen and (max-width: 580px) {
   .subscribe__bg {
     background-color: var(--subscribe-container-color);
     padding: 2.5rem 0;
   }
+  .subscribe__bg button{
+    background-color: var(--subscribe-container-color);
+  }
+
 }
